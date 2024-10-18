@@ -912,6 +912,7 @@ function renderType(
       CognitoIdentityProvider: "cognito-identity-provider",
       CognitoUserPoolClient: "cognito-user-pool-client",
       DynamoLambdaSubscriber: "dynamo-lambda-subscriber",
+      Efs: "efs",
       Function: "function",
       FunctionArgs: "function",
       FunctionPermissionArgs: "function",
@@ -2057,6 +2058,7 @@ async function buildComponents() {
     entryPoints: [
       "../platform/src/config.ts",
       "../platform/src/global-config.d.ts",
+      "../platform/src/components/experimental/dev-command.ts",
       "../platform/src/components/linkable.ts",
       "../platform/src/components/secret.ts",
       "../platform/src/components/aws/analog.ts",
@@ -2088,6 +2090,7 @@ async function buildComponents() {
       "../platform/src/components/aws/cron.ts",
       "../platform/src/components/aws/dynamo.ts",
       "../platform/src/components/aws/dynamo-lambda-subscriber.ts",
+      "../platform/src/components/aws/efs.ts",
       "../platform/src/components/aws/email.ts",
       "../platform/src/components/aws/function.ts",
       "../platform/src/components/aws/postgres.ts",
